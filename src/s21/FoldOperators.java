@@ -2,6 +2,8 @@
 package s21;
 import static s21.PlayWithFunctions.*;
 
+// Exercise s21.ex2a (and the optional s21.ex3)
+
 public class FoldOperators {
   // ***********************************
   // ****** With internal classes ******

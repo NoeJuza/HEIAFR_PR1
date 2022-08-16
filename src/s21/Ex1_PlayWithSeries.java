@@ -1,7 +1,7 @@
 
 package s21;
 
-public class PlayWithSeries {
+public class Ex1_PlayWithSeries {
   
   public static abstract class Series {
     public abstract double function(int i);

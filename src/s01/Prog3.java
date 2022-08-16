@@ -17,7 +17,7 @@ public class Prog3 {
       k++;
     }
 
-    SimpleIO.display("Greatest common divisor of"
+    SimpleIO.display("Greatest common divisor of "
             + n1 + " and " + n2 + " is ", gcd);
   }
 }

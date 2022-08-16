@@ -21,11 +21,11 @@ public class CommonSequences {
     return null; // TODO ... return new SampledFunctionNumberSequence(...)
   }
   
-  // static class ArrayNumberSequence ...  // TODO ...
+  // static class ArrayNumberSequence ...  // TODO (Exercise s21.ex2c)
   
-  // static class SeriesNumberSequence ...  // TODO ...
+  // static class SeriesNumberSequence ...  // TODO (Exercise s21.ex2c)
 
-  // static class SampledFunctionNumberSequence ...  // TODO ...
+  // static class SampledFunctionNumberSequence ...  // TODO (Exercise s21.ex2c, optional part)
   
   
   
@@ -34,18 +34,18 @@ public class CommonSequences {
   // ************************************
   
   public static INumberSequence fromArray1(final double[] t) {
-    return null; // TODO...
+    return null; // TODO (Exercise s21.ex3, optional)
   }
 
   public static INumberSequence fromSeries1(final IFunction f, 
                                             final int from, final int to) {
-    return null; // TODO...
+    return null; // TODO (Exercise s21.ex3, optional)
   }
   
   public static INumberSequence fromSampledFunction1(final IFunction f, 
                                                      final double from, 
                                                      final double to, 
                                                      final int nSubSamples) {
-    return null; // TODO...
+    return null; // TODO (Exercise s21.ex3, optional)
   }
 }

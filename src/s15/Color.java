@@ -13,16 +13,16 @@
     following rules
   - the R, G and B values in the range [0,255] are first divided by 255 to
     lie in the range [0,1]. Let's call those new values R’, G’ and B’.
-  - the K value (meaning black) is computed as :  K = 1 – max(R’, G’, B’).
-  - the C value (meaning cyan) is computed as:    C = (1 – R’ – K) / (1 – K)
-  - the M value (meaning magenta) is computed as: M = (1 – G’ – K) / (1 – K)
-  - the Y value (meaning yellow) is computed as:  Y = (1 – B’ – K) / (1 – K)
+  - the K value (meaning black) is computed as :  K = 1 - max(R’, G’, B’).
+  - the C value (meaning cyan) is computed as:    C = (1 - R’ - K) / (1 - K)
+  - the M value (meaning magenta) is computed as: M = (1 - G’ - K) / (1 - K)
+  - the Y value (meaning yellow) is computed as:  Y = (1 - B’ - K) / (1 - K)
 
   From CMYK to RBG
   - according to the previous paragraph, the values R, G and B can be computed
-    from C, M, Y and K values: R = 255 * (1 – C) * (1 – K)
-                               G = 255 * (1 – M) * (1 – K)
-                               B = 255 * (1 – Y) * (1 – K)
+    from C, M, Y and K values: R = 255 * (1 - C) * (1 - K)
+                               G = 255 * (1 - M) * (1 - K)
+                               B = 255 * (1 - Y) * (1 - K)
 
   Hexadecimal strings can be converted to/from int like this:
     int x = Integer.parseInt("A8", 16);

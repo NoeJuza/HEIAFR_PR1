@@ -28,7 +28,7 @@ public class Hangman {
     return this.lives;
   }
 
-  // isHanged returns true if the player is hanged (and therefore lost)
+  // isHanged returns true if the player is hanged (i.e. he has lost)
   public boolean isHanged() {
     throw new UnsupportedOperationException(); // TODO
   }

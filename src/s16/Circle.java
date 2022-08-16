@@ -3,6 +3,8 @@
 //==============================================================================
 package s16;
 
+// TODO: add relevant modifiers (private, static, final, ...) to the declaration of the members
+
 public class Circle {
   
   double  PI = 3.14159265358;

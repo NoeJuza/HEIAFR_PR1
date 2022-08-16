@@ -20,23 +20,23 @@ public class PlayWithFunctions {
   // static class MySeriesFct ...          // i/2^i
 
   // TODO ...
-  // static class MyTrigonometricFct ...   // sin^2 cos
+  // static class MyTrigonometricFct ...   // sin^2(x) * cos(x)
 
 
   //=================================================
   public static double foldLeft(INumberSequence ns, IFoldableOperation op) {
-    return 0.0; // TODO ...
+    return 0.0; // TODO (Exercise s21.ex2b)
   }
 
   private static void computeAll(IFunction fa, IFunction fb) {
-    // TODO ...
-    //INumberSequence nsArray=...      1.2, 3.4, 5.6 
-    //INumberSequence nsSeries=        fa entre 0 et 20
-    //INumberSequence nsSamples=       fb entre 0 et PI avec 1000 échantillons
+    // TODO (Exercise s21.ex2d)
+    //INumberSequence nsArray = ...    // 1.2, 3.4, 5.6    (Exercise s21.ex2d)
+    //INumberSequence nsSeries =       // fa entre 0 et 20 (Exercise s21.ex2d)
+    //INumberSequence nsSamples =      // fb entre 0 et PI avec 1000 échantillons (Exercise s21.ex2d, optional)
     
-    //System.out.println(...   le produit sur nsArray 
-    //System.out.println(...   la somme sur nsSeries
-    //System.out.println(...   le maximum sur nsSample
+    //System.out.println(...   // le produit sur nsArray  (Exercise s21.ex2d)
+    //System.out.println(...   // la somme sur nsSeries   (Exercise s21.ex2d)
+    //System.out.println(...   // le maximum sur nsSample (Exercise s21.ex2d, optional)
   }
   
   public static void main(String[] args) {
@@ -44,22 +44,22 @@ public class PlayWithFunctions {
     // *******************************************
     // ****** With internal static classes: ******
     // *******************************************
-    // fa=...
-    // fb=...
+    // fa = ...
+    // fb = ...
     computeAll(fa, fb);
 
     // *************************************
     // ****** With anonymous classes: ******
     // *************************************
-    // fa=...
-    // fb=...
+    // fa = ...
+    // fb = ...
     computeAll(fa, fb);
 
     // **************************************
     // ****** With lambda expressions: ******  <----- Ce sera pour le TP S22 !!!
     // **************************************
-    // fa=...
-    // fb=...
+    // fa = ...
+    // fb = ...
     computeAll(fa, fb);
 
   }

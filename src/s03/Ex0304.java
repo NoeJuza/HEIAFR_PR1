@@ -15,16 +15,16 @@ public class Ex0304 {
   //       corresponding field of the "Run/Debug configuration"
   //       (e.g. menu Run -> Edit configurations...)
   //----------------------------------------------------------------------------
-  public static void main(String [] args) {
-    int a, b ,c;
+  public static void main(String[] args) {
+    double a, b ,c;
     if (args.length == 3) {
-      a = Integer.parseInt(args[0]);
-      b = Integer.parseInt(args[1]);
-      c = Integer.parseInt(args[2]);
+      a = Double.parseDouble(args[0]);
+      b = Double.parseDouble(args[1]);
+      c = Double.parseDouble(args[2]);
     } else {
-      a = SimpleIO.readInt("Value of a");
-      b = SimpleIO.readInt("Value of b");
-      c = SimpleIO.readInt("Value of c");
+      a = SimpleIO.readDouble("Value of a");
+      b = SimpleIO.readDouble("Value of b");
+      c = SimpleIO.readDouble("Value of c");
     }
 
     System.out.println("Equation: ("+a+")x\u00B2 + ("+b+")x + ("+c+") == 0");
