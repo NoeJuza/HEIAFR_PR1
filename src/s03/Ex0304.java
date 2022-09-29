@@ -1,20 +1,6 @@
-//==============================================================================
-//  HEIA-FR / Jacques Bapst
-//==============================================================================
-
 package s03;
 import proglib.SimpleIO;
-
 public class Ex0304 {
-
-  //----------------------------------------------------------------------------
-  // Values a, b and c can be given as program arguments, otherwise they
-  // will be read in dialog boxes.
-  //
-  // Note: with IntelliJ IDEA, program arguments can be passed via the
-  //       corresponding field of the "Run/Debug configuration"
-  //       (e.g. menu Run -> Edit configurations...)
-  //----------------------------------------------------------------------------
   public static void main(String[] args) {
     double a, b ,c;
     if (args.length == 3) {
@@ -50,20 +36,17 @@ public class Ex0304 {
       discriminant = Math.pow(b,2) - 4 * a * c;
       System.out.println("Δ = " + discriminant);
       if (discriminant < 0){
-        //x1=–b/2a+i*(–discriminant)^0.5/2a and x2=–b/2a–i*(–discriminant)^0.5/2a
+        //x1=–b/2a+i* sqrt(–discriminant)/2a and x2=–b/2a–i* sqrt(–discriminant)/2a
         System.out.println("No solution in R");
         System.out.println("x1 = -b/2a + i*(-Δ)⁰·⁵ /2a and x2 = -b/2a - i*(-Δ)⁰·⁵ /2a = " + ((-b)/2*a) +
-                " + i*("+ discriminant + ")⁰·⁵ /" + (2*a) +" and x2 = " + ((-b)/2*a) + " - i*(" + discriminant + ")⁰·⁵ /" + (2*a) );
-
+                " + i*"+ Math.sqrt(discriminant) + "/" + (2*a) +" and x2 = " + ((-b)/2*a) + " - i*" + Math.sqrt(discriminant) + "/" + (2*a) );
       }else if(discriminant == 0){
         //x1,2=–b/2a
-
+        System.out.println("x1,2 = -b/2a = " + (-b) + "/" + (2*a)+ " = " + ((-b)/(2*a)));
       }else{
-        //x1=(–b+(discriminant)^0.5)/2a and x2=(–b–(discriminant)^0.5)/2a
-
+        //x1=(–b+ sqrt(discriminant) )/2a and x2=(–b – sqrt(discriminant) )/2a
+        System.out.println("x1=(–b+ sqrt(Δ) )/2a and x2=(–b – sqrt(Δ) )/2a = " + "x1=" + ((-b + Math.sqrt(discriminant))/2*a) + " and x2= " + ((-b - Math.sqrt(discriminant))/2*a) );
       }
-
     }
-
   }
 }
