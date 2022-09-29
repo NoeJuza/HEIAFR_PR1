@@ -5,8 +5,8 @@ public class SecondProgram {
   public static void main(String[] args) {
     int length, width, area;
 
-    length = 8;
-    width  = 6;
+    length = 12;
+    width  = 15;
     area   = length * width;
 
     System.out.println("Rectangle length : " + length);

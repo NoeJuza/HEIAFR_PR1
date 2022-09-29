@@ -30,7 +30,40 @@ public class Ex0304 {
     System.out.println("Equation: ("+a+")x\u00B2 + ("+b+")x + ("+c+") == 0");
 
     // TODO
+    double rep;
     double discriminant;
+    if (a == 0){
+      if (b== 0){
+        if (c == 0){
+          System.out.println("Infinite solutions to equation");
+        }else{
+          System.out.println("Impossible equation (no solutions)");
+        }
+      }else {
+        // in this case; Equation can be simplified to ax+b
+        // y= ax+b
+        // 0 = ax+b
+        // => x= b/a
+        System.out.println("x = c/b = " + c + "/" + b + " = " + (c/b) ); ;
+      }
+    }else{
+      discriminant = Math.pow(b,2) - 4 * a * c;
+      System.out.println("Δ = " + discriminant);
+      if (discriminant < 0){
+        //x1=–b/2a+i*(–discriminant)^0.5/2a and x2=–b/2a–i*(–discriminant)^0.5/2a
+        System.out.println("No solution in R");
+        System.out.println("x1 = -b/2a + i*(-Δ)⁰·⁵ /2a and x2 = -b/2a - i*(-Δ)⁰·⁵ /2a = " + ((-b)/2*a) +
+                " + i*("+ discriminant + ")⁰·⁵ /" + (2*a) +" and x2 = " + ((-b)/2*a) + " - i*(" + discriminant + ")⁰·⁵ /" + (2*a) );
+
+      }else if(discriminant == 0){
+        //x1,2=–b/2a
+
+      }else{
+        //x1=(–b+(discriminant)^0.5)/2a and x2=(–b–(discriminant)^0.5)/2a
+
+      }
+
+    }
 
   }
 }
