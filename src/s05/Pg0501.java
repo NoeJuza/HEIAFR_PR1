@@ -18,9 +18,11 @@ public class Pg0501 {
     {
       while (n>0)
         n--;
-        sum += n;
+        sum += n;// n= 0 ici donc sum est tjr = à 0
     }
     for (int i=1; i<10; i=2*i) sum+=i;
+    // 1 + 2 + 4 + 8
+    // = 12+ 3 = 15
     System.out.println(sum);
   }
   
@@ -60,11 +62,11 @@ public class Pg0501 {
   }
 
   public static void main(String[] args) {
-    ex1a();
-    ex1b();
+    //ex1a();
+    //ex1b();
     ex1c();
-    ex1d();
-    ex1e();
-    ex1f();
+    //ex1d();
+    //ex1e();
+    //ex1f();
   }
 }
