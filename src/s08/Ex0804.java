@@ -2,7 +2,13 @@ package s08;
 
 public class Ex0804 {
   public static int nMonotonies(int[] t) {
-    return 0; // TODO
+    int nbMonotonies = 0;
+    for (int i = 1; i < t.length; i++) {
+      if (t[i] > t[i-1]) {
+        nbMonotonies++;
+      }
+    }
+    return nbMonotonies; // TODO
   }
 
   public static void main(String[] args) {
